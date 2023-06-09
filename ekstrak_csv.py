@@ -5,7 +5,7 @@ import pandas as pd
 from tabulate import tabulate
 from scipy.stats import skew, kurtosis
 
-# memanggil dataset
+# memanggil semua dataset
 images = os.listdir("./daytime")
 num_images = len(images)
 
@@ -26,7 +26,7 @@ for i in range(num_images):
     stdG = np.std(G)
     stdB = np.std(B)
 
-    # convert matrix to array
+    # mengkonversi matriks menjadi array
     Rflat = R.flatten()
     Gflat = G.flatten()
     Bflat = B.flatten()
