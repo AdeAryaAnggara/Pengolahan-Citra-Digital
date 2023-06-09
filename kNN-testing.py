@@ -5,7 +5,7 @@ from sklearn import metrics
 from sklearn.model_selection import train_test_split
 from warnings import simplefilter
 
-# ignore all future warnings
+# Ignore all future warnings
 simplefilter(action="ignore", category=FutureWarning)
 
 # Load dataset
@@ -25,7 +25,7 @@ knn9 = KNeighborsClassifier(n_neighbors=7)
 # Train model menggunakan data training
 knn9.fit(X_train, y_train)
 
-# Melakukan prediksi / klasifikasi
+# Melakukan prediksi dan klasifikasi
 Y_pred = knn9.predict(X_test)
 
 # Print hasil klasifikasi
@@ -33,7 +33,7 @@ for i in range(15):
     print("Hasil Klasifikasi", i + 1, ":", Y_pred[i])
 
 
-# looping singkat
+# Looping singkat
 
 
 def kNN(k, X_train, y_train, X_test):
